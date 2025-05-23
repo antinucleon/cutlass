@@ -102,7 +102,7 @@ def numpy_type(inp):
 
 
 def is_cupy_available():
-    global cupy_available
+    global cupy_available, _library_to_cupy_dict
     if cupy_available is None:
         try:
             import cupy as cp
